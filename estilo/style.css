@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    /* fundoimg, não repetir e posicionada */
+    background-size: cover; /*tamanho da imagem para cobrir a tela toda*/
+    background-attachment: fixed; /* para fixar a img de fundo c a rolagem */
+}
+
+main {
+    position: relative; /* para o preencher a tela e organizar*/
+    height: 100vh;
+
+}
+
+section#telefone {/* telefone */
+    position: absolute; /* dessa forma vai centralizar o telefone */
+    top: 50%; /* com o top e left 50% a ponta esquerda do top  da section*/
+    left: 50%; /* vai começar no centro da página */
+    transform: translate(-50%, -50%); /*essa cfg mantem a section no centro*/
+    /* o container de fora ter Position Relative e Transform Translate mantém a Section Centralizada */
+    height: 627px;/* altura da imagem */
+    width: 311px; /* largura da imagem  */
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
