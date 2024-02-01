@@ -35,3 +35,11 @@ section#telefone {/* telefone */
     width: 311px; /* largura da imagem  */
     background: url(../imagens/frame-iphone.png) no-repeat;
 }
+
+iframe#tela { /* posicionando a imagem da tela do celular com os app */
+    position: relative; /* é necessario Position Relative */
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
