@@ -43,3 +43,22 @@ iframe#tela { /* posicionando a imagem da tela do celular com os app */
     width: 269px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right; /* para posicionar as imgs botoes na direita */
+} /* com a tag br quebrando as linhas nas imagens em html, faz com que as img de botoes fiquem um embaixo do outro
+ */
+
+section#redes-sociais img{ /* configuração das redes sociais */
+    width: 50px; /* tamanho das imagens das redes */
+    margin: 10px; /* para separar os botões das redes */
+    border-radius: 50%; /* arredondando as imagens das redes */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400); /*sombreamento das img */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637); /*adiciona contorno branco nas imgs com mouse sobre*/
+    transform: translate(-3px, -3px); /*cria um efeito "movendo" suavemente a imagem com o mouse sobre*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623); /*efeito de movimento na sombra com o mouse sobre*/
+    transition: transform 0.3s, border 0.6s;/*cria um movimento suave quando o mouse sobre o botão da rede e a borda demorando 1s quando o mouse sobre a img de botão*/
+}
